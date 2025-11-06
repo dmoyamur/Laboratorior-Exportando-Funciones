@@ -18,6 +18,5 @@ export function crearUsuario (nombre, rol){
     return usuario;
 }
 
-
 let usuario1 = crearUsuario("Juan",ROLES.ADMIN)
 console.log(usuario1)
