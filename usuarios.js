@@ -1,7 +1,7 @@
 import { ROLES } from "./usuariosConstantes.js";
 
 
-function crearUsuario (nombre, rol){
+export function crearUsuario (nombre, rol){
     if (rol !== ROLES.ADMIN && rol !== ROLES.CLIENTE){
         console.log("Ingrese un rol valido: admin o cliente")
         return null;
@@ -14,7 +14,7 @@ function crearUsuario (nombre, rol){
         rol : rol,
         fecharegistro:fecharegistro
     };
-    
+
     return usuario;
 }
 

@@ -2,6 +2,8 @@ console.log ("Elaborado por: Alberto Cortes Palacios, Juan Sebastian Nieto, Dian
 
 import { PI, IVA, DIAS_SEMANA, DESCUENTO } from "./constantes.js";
 import { sumar, restar, multiplicar, areaCirculo1, calcularTotal, aplicarImpuestos, DescuentoTotal} from "./operaciones-matematicas.js";
+import { ROLES } from "./usuariosConstantes.js";
+import { crearUsuario } from "./usuarios.js";
 
 console.log(" EJERCICIO 1")
 const areaCirculo = PI*5*5;
@@ -27,3 +29,8 @@ console.log(`El total con impuestos es `,totalconImp);
 let totalconDcto = DescuentoTotal(totalconImp,DESCUENTO);
 console.log(`El total con impuestos y descuentos es `,totalconDcto);
 
+console.log("\n Ejercicio 4")
+let usuario1 = crearUsuario("Pedro", ROLES.ADMIN);
+let usuario2 = crearUsuario("Carlos", ROLES.CLIENTE);
+console.log(usuario1)
+console.log(usuario2)
